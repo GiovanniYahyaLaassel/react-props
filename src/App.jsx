@@ -29,18 +29,20 @@ function App() {
           ))}
         </div>  
       </section>   
+      
+      <div className={styles.cardsContainer}>
+         {/* genero le card */}
+          {pubblishedPosts.map((post) => (
+            <Card 
 
-      {/* genero le card */}
-      {pubblishedPosts.map((post) => (
-        <Card 
-
-          key={post.id} 
-          title={post.title}
-          content={post.content}
-          image={post.image}
-          tags={post.tags} 
-        />
-      ))}
+              key={post.id} 
+              title={post.title}
+              content={post.content}
+              image={post.image}
+              tags={post.tags} 
+            />
+          ))}
+      </div>
       <Footer/>
 
     </div>
