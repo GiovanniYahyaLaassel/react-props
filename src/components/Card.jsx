@@ -3,8 +3,8 @@ import styles from "./Card.module.css";
 
 // Destrutturo i props e li faccio accettare da card
 function Card({title, content, image, tags}) {
-    console.log('title component:', title);
-    console.log('tags array:', tags);
+    // console.log('title component:', title);
+    // console.log('tags array:', tags);
 
     return (
         <article className={styles.card}>
